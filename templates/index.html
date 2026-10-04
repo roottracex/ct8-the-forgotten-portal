@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cybertec8 — Cyber Security Store</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="/" class="brand">
+            <span class="brand-mark">C8</span>
+            <span>CYBERTEC8</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="#products">Products</a>
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search">⌕</button>
+            <button class="icon-btn" aria-label="Cart">🛒</button>
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span></span>
+                CYBERTEC8 STORE
+            </div>
+
+            <h1>
+                SECURITY<br>
+                <span>STARTS WITH</span><br>
+                CURIOSITY.
+            </h1>
+
+            <p>
+                Explore Cybertec8 gear built for security enthusiasts,
+                ethical hackers, developers and the cybersecurity community.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="primary-btn">
+                    SHOP COLLECTION
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    LEARN MORE →
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="glow-circle"></div>
+
+            <div class="terminal-card">
+
+                <div class="terminal-top">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="green-text">$</span>
+                        whoami
+                    </p>
+
+                    <p class="terminal-output">
+                        security_enthusiast
+                    </p>
+
+                    <p>
+                        <span class="green-text">$</span>
+                        cat mission.txt
+                    </p>
+
+                    <p class="terminal-output">
+                        Learn. Build. Secure.
+                    </p>
+
+                    <p>
+                        <span class="green-text">$</span>
+                        ./cybertec8
+                    </p>
+
+                    <p class="cursor">█</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORY STRIP -->
+    <section class="category-strip" id="collections">
+
+        <div>
+            <span>01</span>
+            T-SHIRTS
+        </div>
+
+        <div>
+            <span>02</span>
+            HOODIES
+        </div>
+
+        <div>
+            <span>03</span>
+            CAPS
+        </div>
+
+        <div>
+            <span>04</span>
+            STICKERS
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-title">CYBERTEC8 COLLECTION</p>
+
+                <h2>
+                    FEATURED
+                    <span>GEAR</span>
+                </h2>
+            </div>
+
+            <a href="#">VIEW ALL →</a>
+
+        </div>
+
+
+        <div class="products-grid">
+
+            <!-- PRODUCT 1 -->
+            <article class="product-card">
+
+                <div class="product-image shirt">
+                    <span class="product-badge">NEW</span>
+
+                    <div class="product-logo">
+                        CYBER<br>TEC8
+                    </div>
+                </div>
+
+                <div class="product-info">
+
+                    <div>
+                        <p class="product-category">
+                            APPAREL
+                        </p>
+
+                        <h3>
+                            Cyber Security T-Shirt
+                        </h3>
+                    </div>
+
+                    <strong>₹599</strong>
+
+                </div>
+
+                <button class="add-btn">
+                    ADD TO CART +
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+            <article class="product-card">
+
+                <div class="product-image hoodie">
+
+                    <div class="hoodie-symbol">
+                        &lt;/&gt;
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div>
+                        <p class="product-category">
+                            APPAREL
+                        </p>
+
+                        <h3>
+                            Ethical Hacker Hoodie
+                        </h3>
+                    </div>
+
+                    <strong>₹999</strong>
+
+                </div>
+
+                <button class="add-btn">
+                    ADD TO CART +
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+            <article class="product-card">
+
+                <div class="product-image stickers">
+
+                    <div class="sticker-stack">
+                        C8
+                    </div>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div>
+                        <p class="product-category">
+                            ACCESSORIES
+                        </p>
+
+                        <h3>
+                            Cybertec8 Sticker Pack
+                        </h3>
+                    </div>
+
+                    <strong>₹199</strong>
+
+                </div>
+
+                <button class="add-btn">
+                    ADD TO CART +
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+        <div class="about-number">
+            08
+        </div>
+
+        <div class="about-content">
+
+            <p class="small-title">
+                ABOUT CYBERTEC8
+            </p>
+
+            <h2>
+                BUILT FOR THE
+                <span>SECURITY COMMUNITY.</span>
+            </h2>
+
+            <p>
+                Cybertec8 is a cybersecurity community focused on
+                practical learning, security awareness and hands-on
+                technology.
+            </p>
+
+            <a href="#">
+                DISCOVER CYBERTEC8 →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-brand">
+            <div class="brand">
+                <span class="brand-mark">C8</span>
+                <span>CYBERTEC8</span>
+            </div>
+
+            <p>
+                Learn. Build. Secure.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <h4>STORE</h4>
+                <a href="#products">Products</a>
+                <a href="#">Collections</a>
+            </div>
+
+            <div>
+                <h4>COMMUNITY</h4>
+                <a href="#">Cybertec8</a>
+                <a href="#">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 CYBERTEC8. ALL RIGHTS RESERVED.
+        </div>
+
+    </footer>
+
+</body>
+</html>

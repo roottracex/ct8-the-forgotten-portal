@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cybertec8 — Legacy Store</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+        .legacy-page {
+            min-height: 100vh;
+            background:
+                radial-gradient(
+                    circle at 50% 20%,
+                    rgba(0, 168, 255, 0.08),
+                    transparent 35%
+                ),
+                #05070b;
+        }
+
+        .legacy-nav {
+            height: 78px;
+            padding: 0 8%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            border-bottom: 1px solid #1b2532;
+
+            background: rgba(5, 7, 11, 0.95);
+        }
+
+        .legacy-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            color: #ffffff;
+
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        .legacy-mark {
+            width: 36px;
+            height: 36px;
+
+            display: grid;
+            place-items: center;
+
+            border: 1px solid #00a8ff;
+
+            color: #00e5ff;
+
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .legacy-label {
+            color: #687482;
+
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+        }
+
+        .legacy-container {
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 100px 30px;
+        }
+
+        .legacy-alert {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            padding: 8px 12px;
+
+            border: 1px solid #263443;
+
+            background: #0a1018;
+
+            color: #8d99a7;
+
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+
+            letter-spacing: 1px;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #ffbd2e;
+        }
+
+        .legacy-container h1 {
+            margin-top: 28px;
+
+            max-width: 800px;
+
+            font-family: Arial, sans-serif;
+            font-size: clamp(42px, 6vw, 72px);
+
+            line-height: 1;
+
+            letter-spacing: -3px;
+
+            color: #f5f7fa;
+        }
+
+        .legacy-container h1 span {
+            color: #66717e;
+        }
+
+        .legacy-description {
+            max-width: 650px;
+
+            margin-top: 25px;
+
+            color: #8b96a4;
+
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+
+            line-height: 1.8;
+        }
+
+        .legacy-panel {
+            margin-top: 55px;
+
+            padding: 28px;
+
+            border: 1px solid #1b2938;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0b1119,
+                    #080c12
+                );
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding-bottom: 18px;
+
+            border-bottom: 1px solid #1b2532;
+        }
+
+        .panel-header h2 {
+            color: #dce3ea;
+
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+        }
+
+        .panel-header span {
+            color: #56616e;
+
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+
+            letter-spacing: 1px;
+        }
+
+        .legacy-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+
+            margin-top: 22px;
+        }
+
+        .legacy-card {
+            padding: 22px;
+
+            border: 1px solid #182432;
+
+            background: #080d14;
+        }
+
+        .legacy-card-number {
+            color: #00a8ff;
+
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+
+            margin-bottom: 18px;
+        }
+
+        .legacy-card h3 {
+            color: #e7ebef;
+
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+
+            margin-bottom: 9px;
+        }
+
+        .legacy-card p {
+            color: #697583;
+
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+
+            line-height: 1.6;
+        }
+
+        .legacy-footer {
+            margin-top: 70px;
+
+            padding-top: 25px;
+
+            border-top: 1px solid #1b2532;
+
+            color: #4e5966;
+
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 700px) {
+
+            .legacy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .legacy-container {
+                padding: 70px 20px;
+            }
+
+            .legacy-container h1 {
+                letter-spacing: -2px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="legacy-page">
+
+    <!-- NAVIGATION -->
+
+    <nav class="legacy-nav">
+
+        <div class="legacy-brand">
+
+            <div class="legacy-mark">
+                C8
+            </div>
+
+            CYBERTEC8
+
+        </div>
+
+        <div class="legacy-label">
+            LEGACY STORE
+        </div>
+
+    </nav>
+
+
+    <!-- CONTENT -->
+
+    <main class="legacy-container">
+
+        <div class="legacy-alert">
+            <span class="status-dot"></span>
+            LEGACY SYSTEM
+        </div>
+
+
+        <h1>
+            Welcome to the
+            <span>Old Store.</span>
+        </h1>
+
+
+        <p class="legacy-description">
+            This section belongs to an older version of the Cybertec8
+            store. The catalog has since been migrated to our new platform,
+            but some legacy resources may still remain available.
+        </p>
+
+
+        <!-- LEGACY PANEL -->
+
+        <section class="legacy-panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Archived Store Resources
+                </h2>
+
+                <span>
+                    SYSTEM: LEGACY
+                </span>
+
+            </div>
+
+
+            <div class="legacy-grid">
+
+                <div class="legacy-card">
+
+                    <div class="legacy-card-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Old Products
+                    </h3>
+
+                    <p>
+                        Previously available Cybertec8
+                        products and collections.
+                    </p>
+
+                </div>
+
+
+                <div class="legacy-card">
+
+                    <div class="legacy-card-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Archived Orders
+                    </h3>
+
+                    <p>
+                        Historical store information
+                        from the previous platform.
+                    </p>
+
+                </div>
+
+
+                <div class="legacy-card">
+
+                    <div class="legacy-card-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Migration Data
+                    </h3>
+
+                    <p>
+                        Resources related to the
+                        2026 store migration.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+            <div class="legacy-footer">
+        CYBERTEC8 © 2026 — LEGACY STORE
+    </div>
+
+</main>
+
+</div>
+
+<!-- Legacy verification token -->
+<!-- Flag_CT8{forgotten_portal_found} -->
+
+</body>
+</html>
